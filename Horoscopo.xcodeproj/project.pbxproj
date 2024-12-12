@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		B2BE1FE42D0B557300BC4472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FE32D0B557300BC4472 /* AppDelegate.swift */; };
 		B2BE1FE62D0B557300BC4472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FE52D0B557300BC4472 /* SceneDelegate.swift */; };
-		B2BE1FE82D0B557300BC4472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FE72D0B557300BC4472 /* ViewController.swift */; };
+		B2BE1FE82D0B557300BC4472 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FE72D0B557300BC4472 /* MainViewController.swift */; };
 		B2BE1FEB2D0B557300BC4472 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B2BE1FEA2D0B557300BC4472 /* Base */; };
 		B2BE1FED2D0B557400BC4472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BE1FEC2D0B557400BC4472 /* Assets.xcassets */; };
 		B2BE1FF02D0B557400BC4472 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B2BE1FEF2D0B557400BC4472 /* Base */; };
+		B2BE1FF82D0B57E300BC4472 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FF72D0B57E300BC4472 /* Horoscope.swift */; };
+		B2BE1FFA2D0B5CA700BC4472 /* HoroscopeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE1FF92D0B5CA700BC4472 /* HoroscopeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2BE1FE02D0B557300BC4472 /* Horoscopo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscopo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BE1FE32D0B557300BC4472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BE1FE52D0B557300BC4472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2BE1FE72D0B557300BC4472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2BE1FE72D0B557300BC4472 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2BE1FEA2D0B557300BC4472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2BE1FEC2D0B557400BC4472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2BE1FEF2D0B557400BC4472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2BE1FF12D0B557400BC4472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BE1FF72D0B57E300BC4472 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		B2BE1FF92D0B5CA700BC4472 /* HoroscopeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				B2BE1FE32D0B557300BC4472 /* AppDelegate.swift */,
 				B2BE1FE52D0B557300BC4472 /* SceneDelegate.swift */,
-				B2BE1FE72D0B557300BC4472 /* ViewController.swift */,
+				B2BE1FE72D0B557300BC4472 /* MainViewController.swift */,
 				B2BE1FE92D0B557300BC4472 /* Main.storyboard */,
 				B2BE1FEC2D0B557400BC4472 /* Assets.xcassets */,
 				B2BE1FEE2D0B557400BC4472 /* LaunchScreen.storyboard */,
 				B2BE1FF12D0B557400BC4472 /* Info.plist */,
+				B2BE1FF72D0B57E300BC4472 /* Horoscope.swift */,
+				B2BE1FF92D0B5CA700BC4472 /* HoroscopeViewCell.swift */,
 			);
 			path = Horoscopo;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2BE1FE82D0B557300BC4472 /* ViewController.swift in Sources */,
+				B2BE1FFA2D0B5CA700BC4472 /* HoroscopeViewCell.swift in Sources */,
+				B2BE1FF82D0B57E300BC4472 /* Horoscope.swift in Sources */,
+				B2BE1FE82D0B557300BC4472 /* MainViewController.swift in Sources */,
 				B2BE1FE42D0B557300BC4472 /* AppDelegate.swift in Sources */,
 				B2BE1FE62D0B557300BC4472 /* SceneDelegate.swift in Sources */,
 			);
