@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ga7-g7-PtJ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -8,7 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="PJ1-ds-zDQ">
+            <objects>
+                <navigationController id="ga7-g7-PtJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="juL-dR-72Y">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tmB-Yv-fiI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htq-ZJ-kBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895" y="4"/>
+        </scene>
+        <!--Zodiaco-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Horoscopo" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" estimatedRowHeight="102" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hPT-Jc-nmf">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="102" id="wie-d7-Onj" customClass="HoroscopeViewCell" customModule="Horoscopo" customModuleProvider="target">
@@ -51,6 +67,7 @@
                                             <outlet property="datesLabel" destination="KqJ-cD-YDl" id="7w6-xg-WxI"/>
                                             <outlet property="iconImageView" destination="eL9-AM-dGE" id="7hN-mq-m1v"/>
                                             <outlet property="nameLabel" destination="Kfs-dk-a2e" id="ElR-q9-RMw"/>
+                                            <segue destination="UML-hg-rqz" kind="show" identifier="navigateToDetail" id="gPe-D4-87a"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -65,6 +82,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hPT-Jc-nmf" secondAttribute="trailing" id="afO-gd-MU8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Zodiaco" id="uBO-V3-OCH"/>
                     <connections>
                         <outlet property="tableView" destination="hPT-Jc-nmf" id="cg4-dp-q6O"/>
                     </connections>
@@ -72,6 +90,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-25.190839694656489" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="OEp-Yg-OUb">
+            <objects>
+                <viewController id="UML-hg-rqz" customClass="DetailViewController" customModule="Horoscopo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jj-W8-lbE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-Dp-VLV" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-yo-lMw">
+                                        <rect key="frame" x="76" y="8" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vH-0q-aZZ">
+                                        <rect key="frame" x="8" y="256" width="377" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gvh-ge-gb9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gvh-ge-gb9" firstAttribute="trailing" secondItem="eAI-Dp-VLV" secondAttribute="trailing" id="6NX-Gw-M5g"/>
+                            <constraint firstItem="gvh-ge-gb9" firstAttribute="bottom" secondItem="eAI-Dp-VLV" secondAttribute="bottom" id="VnH-d6-ys5"/>
+                            <constraint firstItem="eAI-Dp-VLV" firstAttribute="top" secondItem="gvh-ge-gb9" secondAttribute="top" id="cgV-DX-oVe"/>
+                            <constraint firstItem="eAI-Dp-VLV" firstAttribute="leading" secondItem="gvh-ge-gb9" secondAttribute="leading" id="ejp-Oh-O7e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JAi-eY-tfs"/>
+                    <connections>
+                        <outlet property="datesLabel" destination="7vH-0q-aZZ" id="uaM-bm-zno"/>
+                        <outlet property="iconImageView" destination="5AA-yo-lMw" id="JSK-0O-aeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUF-pf-5mt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.625" y="3.1690140845070425"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="869-w2-DVP">
+            <objects>
+                <viewController id="OST-6h-kwB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sFT-Co-7qi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b4O-U1-mcI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="99V-i7-62A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20E-gC-zyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="-698"/>
         </scene>
     </scenes>
     <resources>
