@@ -126,9 +126,17 @@
                             <constraint firstItem="eAI-Dp-VLV" firstAttribute="leading" secondItem="gvh-ge-gb9" secondAttribute="leading" id="ejp-Oh-O7e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JAi-eY-tfs"/>
+                    <navigationItem key="navigationItem" id="JAi-eY-tfs">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart" catalog="system" id="99n-1k-G36">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <action selector="setFavorite:" destination="UML-hg-rqz" id="H6T-Mi-Zn2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="datesLabel" destination="7vH-0q-aZZ" id="uaM-bm-zno"/>
+                        <outlet property="favoriteMenu" destination="99n-1k-G36" id="azf-Wo-ugb"/>
                         <outlet property="iconImageView" destination="5AA-yo-lMw" id="JSK-0O-aeQ"/>
                     </connections>
                 </viewController>
@@ -136,26 +144,14 @@
             </objects>
             <point key="canvasLocation" x="860.625" y="3.1690140845070425"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="869-w2-DVP">
-            <objects>
-                <viewController id="OST-6h-kwB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sFT-Co-7qi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="b4O-U1-mcI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="99V-i7-62A"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="20E-gC-zyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="862" y="-698"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
