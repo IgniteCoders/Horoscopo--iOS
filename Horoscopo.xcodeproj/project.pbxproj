@@ -62,18 +62,58 @@
 		B2BE1FE22D0B557300BC4472 /* Horoscopo */ = {
 			isa = PBXGroup;
 			children = (
+				B2D5E31C2D10AB1500E5FFA1 /* Views */,
+				B2D5E31B2D10AB0C00E5FFA1 /* ViewControllers */,
+				B2D5E31E2D10AB8100E5FFA1 /* TableViewCells */,
+				B2D5E31D2D10AB3E00E5FFA1 /* Entities */,
+				B2D5E31A2D10AAC100E5FFA1 /* Utils */,
 				B2BE1FE32D0B557300BC4472 /* AppDelegate.swift */,
 				B2BE1FE52D0B557300BC4472 /* SceneDelegate.swift */,
-				B2BE1FE72D0B557300BC4472 /* MainViewController.swift */,
-				B2BE1FE92D0B557300BC4472 /* Main.storyboard */,
 				B2BE1FEC2D0B557400BC4472 /* Assets.xcassets */,
-				B2BE1FEE2D0B557400BC4472 /* LaunchScreen.storyboard */,
 				B2BE1FF12D0B557400BC4472 /* Info.plist */,
-				B2BE1FF72D0B57E300BC4472 /* Horoscope.swift */,
-				B2BE1FF92D0B5CA700BC4472 /* HoroscopeViewCell.swift */,
-				B2CFB3642D0CA62900321D1F /* DetailViewController.swift */,
 			);
 			path = Horoscopo;
+			sourceTree = "<group>";
+		};
+		B2D5E31A2D10AAC100E5FFA1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B2D5E31B2D10AB0C00E5FFA1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE1FE72D0B557300BC4472 /* MainViewController.swift */,
+				B2CFB3642D0CA62900321D1F /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2D5E31C2D10AB1500E5FFA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE1FE92D0B557300BC4472 /* Main.storyboard */,
+				B2BE1FEE2D0B557400BC4472 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2D5E31D2D10AB3E00E5FFA1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE1FF72D0B57E300BC4472 /* Horoscope.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B2D5E31E2D10AB8100E5FFA1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B2BE1FF92D0B5CA700BC4472 /* HoroscopeViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
